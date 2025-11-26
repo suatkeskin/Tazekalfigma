@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { Calendar, Palette, Users, CheckSquare } from "lucide-react";
 import { Button } from "./ui/button";
+import { TazekalLogo } from "./TazekalLogo";
 
 interface OnboardingScreenProps {
   onComplete: () => void;

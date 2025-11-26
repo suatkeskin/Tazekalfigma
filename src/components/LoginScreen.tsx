@@ -2,6 +2,7 @@ import { useState } from "react";
 import { useLanguage } from "../contexts/LanguageContext";
 import { Button } from "./ui/button";
 import { Input } from "./ui/input";
+import { TazekalLogo } from "./TazekalLogo";
 
 interface LoginScreenProps {
   onLogin: () => void;
@@ -25,8 +26,8 @@ export function LoginScreen({ onLogin }: LoginScreenProps) {
       <div className="w-full max-w-md">
         {/* Logo/Brand */}
         <div className="text-center mb-12">
-          <div className="inline-flex items-center justify-center w-20 h-20 bg-teal-600 rounded-3xl mb-6 shadow-2xl shadow-teal-600/30">
-            <span className="text-white text-3xl">T</span>
+          <div className="inline-block mb-6">
+            <TazekalLogo size={80} />
           </div>
           <h1 className="text-gray-900 mb-2">{t("welcomeBack")}</h1>
           <p className="text-gray-600">{t("loginSubtitle")}</p>
